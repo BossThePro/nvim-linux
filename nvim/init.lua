@@ -1,0 +1,5 @@
+require("settings.options")
+require("settings.lazy")
+require("settings.lspconfig")
+require("settings.treesitter")
+require("settings.highlighting")
