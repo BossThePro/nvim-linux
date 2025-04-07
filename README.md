@@ -48,7 +48,7 @@ sudo pacman -S python-neovim
 Similarly, to make VimTex work and able to compile latex files, we need a PDF viewer and latexmk which we can install using the following command:
 
 ```
-sudo pacman -S texlive-binextra zathura zathura-pdf-mupdf texlive-core extra/texlive-latex extra/texlive-latexextra extra/texlive-plaingeneric
+sudo pacman -S texlive-binextra zathura zathura-pdf-mupdf texlive-core extra/texlive-latex extra/texlive-latexextra extra/texlive-plaingeneric texlive
 ```
 
 Now it should be ready to go. Happy coding!
