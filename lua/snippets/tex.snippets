@@ -409,240 +409,240 @@ snippet multicol2 "two-column environment with multicol"
 	\\end{multicols}
 endsnippet
 snippet \{ "\{ \}"
-	\\{ ${0} \\}
+\\{ ${0} \\}
 endsnippet
 #delimiter
 snippet lr "left right"
-	\\left${1} ${0:${VISUAL}} \\right$1
+\\left${1} ${0:${VISUAL}} \\right$1
 endsnippet
 snippet lr( "left( right)"
-	\\left( ${0:${VISUAL}} \\right)
+\\left( ${0:${VISUAL}} \\right)
 endsnippet
 snippet lr| "left| right|"
-	\\left| ${0:${VISUAL}} \\right|
+\\left| ${0:${VISUAL}} \\right|
 endsnippet
 snippet lr{ "left\{ right\}"
-	\\left\\{ ${0:${VISUAL}} \\right\\}
+\\left\\{ ${0:${VISUAL}} \\right\\}
 endsnippet
 snippet lr[ "left[ right]"
-	\\left[ ${0:${VISUAL}} \\right]
+\\left[ ${0:${VISUAL}} \\right]
 endsnippet
 snippet lra "langle rangle"
-	\\langle ${0:${VISUAL}} \\rangle
+\\langle ${0:${VISUAL}} \\rangle
 endsnippet
 # Code listings
 snippet lst
-	\\begin{listing}[language=${1:language}]
-		${0:${VISUAL}}
-	\\end{listing}
+\\begin{listing}[language=${1:language}]
+	${0:${VISUAL}}
+\\end{listing}
 endsnippet
 snippet lsi
-	\\lstinline|${1}| ${0}
+\\lstinline|${1}| ${0}
 endsnippet
 # Hyperlinks
 snippet url
-	\\url{${1}} ${0}
+\\url{${1}} ${0}
 endsnippet
 snippet href
-	\\href{${1}}{${2}} ${0}
+\\href{${1}}{${2}} ${0}
 endsnippet
 # URL from Clipboard.
 snippet urlc
-	\\url{`@+`} ${0}
+\\url{`@+`} ${0}
 endsnippet
 snippet hrefc
-	\\href{`@+`}{${1}} ${0}
+\\href{`@+`}{${1}} ${0}
 endsnippet
 # enquote from package csquotes
 snippet enq "enquote"
-	\\enquote{${1:${VISUAL:text}}} ${0}
+\\enquote{${1:${VISUAL:text}}} ${0}
 endsnippet
 # Time derivative
 snippet ddt "time derivative"
-	\\frac{d}{dt} {$1} {$0}
+\\frac{d}{dt} {$1} {$0}
 endsnippet
 # Limit
 snippet lim "limit"
-	\\lim_{{$1}} {{$2}} {$0}
+\\lim_{{$1}} {{$2}} {$0}
 endsnippet
 # Partial derivative
 snippet pdv "partial derivation"
-	\\frac{\\partial {$1}}{\\partial {$2}} {$0}
+\\frac{\\partial {$1}}{\\partial {$2}} {$0}
 endsnippet
 # Second order partial derivative
 snippet ppdv "second partial derivation"
-	\\frac{\\partial^2 {$1}}{\\partial {$2} \\partial {$3}} {$0}
+\\frac{\\partial^2 {$1}}{\\partial {$2} \\partial {$3}} {$0}
 endsnippet
 # Ordinary derivative
 snippet dv "derivative"
-	\\frac{d {$1}}{d {$2}} {$0}
+\\frac{d {$1}}{d {$2}} {$0}
 endsnippet
 # Summation
 snippet summ "summation"
-	\\sum_{{$1}} {$0}
+\\sum_{{$1}} {$0}
 endsnippet
 # Shorthand for time derivative
 snippet dot "dot"
-	\\dot{{$1}} {$0}
+\\dot{{$1}} {$0}
 endsnippet
 # Shorthand for second order time derivative
 snippet ddot "ddot"
-	\\ddot{{$1}} {$0}
+\\ddot{{$1}} {$0}
 endsnippet
 # Vector
 snippet vec "vector"
-	\\vec{{$1}} {$0}
+\\vec{{$1}} {$0}
 endsnippet
 # Bar
 snippet bar "bar"
-	\\bar{{$1}} {$0}
+\\bar{{$1}} {$0}
 endsnippet
 # Cross product
 snippet \x "cross product"
-	\\times {$0}
+\\times {$0}
 endsnippet
 # Dot product
 snippet . "dot product"
-	\\cdot {$0}
+\\cdot {$0}
 endsnippet
 # Integral
 snippet int "integral"
-	\\int_{{$1}}^{{$2}} {$3} \\: d{$4} {$0}
+\\int_{{$1}}^{{$2}} {$3} \\: d{$4} {$0}
 endsnippet
 # Right arrow
 snippet ra "rightarrow"
-	\\rightarrow {$0}
+\\rightarrow {$0}
 endsnippet
 # Long right arrow
 snippet lra "longrightarrow"
-	\\longrightarrow {$0}
+\\longrightarrow {$0}
 endsnippet
 #Mean population (mu)
 snippet mu "mu"
-	\\mu
+\\mu
 endsnippet
 #Mean formula
 snippet mean "mean"
-	\\ensuremath{$1 = \\frac{\\sum\\limits_{$2}^{$3}$4}{$5}}
+\\ensuremath{$1 = \\frac{\\sum\\limits_{$2}^{$3}$4}{$5}}
 endsnippet
 #Standard deviation population (sigma)
 snippet sig "sigma"
-	\\sigma $0
+\\sigma $0
 endsnippet
 #Variance symbol population:
 snippet ssig "variance"
-	\\sigma^2 $0
+\\sigma^2 $0
 endsnippet
 #Variance for x
 snippet ssigx "variancex"
-	\\sigma^2_x $0
+\\sigma^2_x $0
 endsnippet
 #Variance for y
 snippet ssigy "variancey"
-	\\sigma^2_y $0
+\\sigma^2_y $0
 endsnippet
 #Variance equation
 snippet var "varianceeq"
-	$1 = \\frac{\\sum\\limits_{$2}^{$3}($4-$5)^2}{$6} $0
+$1 = \\frac{\\sum\\limits_{$2}^{$3}($4-$5)^2}{$6} $0
 endsnippet
 #Quick $$ insertion
 snippet dq "dollarequation"
-	$$1$ $0
+$$1$ $0
 endsnippet
 #Fraction with parenthesis around it
 snippet pfrac "parenthesisfraction"
-	\\left(\\frac{$1}{$2}\\right) $0
+\\left(\\frac{$1}{$2}\\right) $0
 endsnippet
 #Quick snippet for \text{}
 snippet tex "text"
-	\\text{$1} $0
+\\text{$1} $0
 endsnippet
 #Tilde symbol
 snippet til "tilde"
-	\\sim
+\\sim
 endsnippet
 #Quick parenthesis
 snippet pa "parenthesis"
-	($1) $0
+($1) $0
 endsnippet
 #Quick less than or equal to
 snippet leq "lessthanequalto"
-	\\leq $0
+\\leq $0
 endsnippet
 #Quick greater than or equal to
 snippet geq "greaterthanequalto"
-	\\geq $0
+\\geq $0
 endsnippet
 #Quick pi symbol
 snippet pi "pi"
-	\\pi $0
+\\pi $0
 endsnippet
 #Quick alpha symbol
 snippet alp "alpha"
-	\\alpha
+\\alpha
 endsnippet
 #Quick beta symbol
 snippet bet "beta"
-	\\beta
+\\beta
 #quickly add to the power of for several elements
 snippet pow "powerof" b
-	^{$1} $0
+^{$1} $0
 endsnippet
 #quickly add _{} for several elements
 snippet low "lowerof" b
-	_{$1} $0
+_{$1} $0
 #Quick square root
 snippet sqr squareroot 
-	\\sqrt{$1} $0
+\\sqrt{$1} $0
 endsnippet
 #Quick plus minus symbol
 snippet pm "plusminus"
-	\\pm $0
+\\pm $0
 endsnippet
 #Quick power and lower bound
 snippet plow "powerlowerof" b
-	^{$1}_{$2} $0
+^{$1}_{$2} $0
 endsnippet
 #Quick times symbol
 snippet tim "times"
-	\\times
+\\times
 endsnippet
 #Quick link (custom function)
 snippet link "link"
-	\\link{$1}, $0
+\\link{$1}, $0
 endsnippet
 #Quick percentage
 snippet pct "percentage"
-	\\% $0
+\\% $0
 endsnippet
 #Custom section command
 snippet mysec "mysection"
-	\\mysection{$1}
-	$0
+\\mysection{$1}
+$0
 endsnippet
 #Custom subsection command
 snippet mysub "mysubsection"
-	\\mysubsection{$1}
-	$0
+\\mysubsection{$1}
+$0
 endsnippet
 #Custom subsubsection command
 snippet myssub "mysubsubsection"
-	\\mysubsubsection{$1}
-	$0
+\\mysubsubsection{$1}
+$0
 endsnippet
 #Custom square brackets command []
 snippet bra "brackets"
-	\\left[\\$1\\right] $0
+\\left[\\$1\\right] $0
 endsnippet
 #Quick hat command ^
 snippet hat "hat"
-	\\hat{$1}$0
+\\hat{$1}$0
 endsnippet
 #Quick not equals to sign
 snippet neq "notequal"
-	\\neq $0
+\\neq $0
 endsnippet
 #Quick chi-square dist
 snippet chi "chisquare"
-	\\chi^2
+\\chi^2
 endsnippet
