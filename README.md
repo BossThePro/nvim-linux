@@ -39,6 +39,11 @@ Afterwards we can run npm to install the language servers
 npm install pyright clang ts ts-language-server
 ```
 
+Remember to download clang as well for C++ support:
+```
+sudo pacman -S clang
+```
+
 In order to make ultisnips work, make sure to download the python-neovim package by running the following command:
 
 ```
