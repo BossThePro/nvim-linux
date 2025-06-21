@@ -1,6 +1,7 @@
 require("settings.options")
 require("settings.lazy")
 require("settings.lspconfig")
+require("settings.harpoon")
 require("settings.treesitter")
 require("settings.highlighting")
 require("settings.cmp")
