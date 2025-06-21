@@ -58,3 +58,7 @@ for _, lsp in ipairs(servers) do
     capabilities = capabilities
   }
 end
+
+require("cmp").setup.filetype("tex", {
+  enabled = false,
+})
