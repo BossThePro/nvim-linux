@@ -36,7 +36,7 @@ sudo pacman -S npm
 Afterwards we can run npm to install the language servers
 
 ```
-npm install pyright clang ts ts-language-server
+sudo npm install -g pyright clang ts ts-language-server
 ```
 
 Remember to download clang as well for C++ support:
