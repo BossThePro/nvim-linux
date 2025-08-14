@@ -10,25 +10,8 @@ local python_root_files = {
   '.git',
 }
 
--- Python (Pyright)
-require('lspconfig').pyright.setup{
-  cmd = { 'pyright-langserver', '--stdio' },
-  filetypes = { 'python' },
-  root_dir = function(fname)
-    return util.root_pattern(unpack(python_root_files))(fname)
-  end,
-  single_file_support = true,
-  settings = {
-    python = {
-      analysis = {
-        autoSearchPaths = true,
-        useLibraryCodeForTypes = true,
-        diagnosticMode = 'openFilesOnly',
-      },
-    },
-  }
-}
-
+-- Python (Pyright)o
+vim.lsp.enable('pyright')
 -- C++ (clangd)
 require('lspconfig').clangd.setup{
   cmd = { 'clangd' },

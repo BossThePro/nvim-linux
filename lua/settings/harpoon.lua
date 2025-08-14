@@ -21,6 +21,18 @@ vim.keymap.set("n", "<C-S-P>", function() harpoon:list():prev() end)
 vim.keymap.set("n", "<C-S-N>", function() harpoon:list():next() end)
 
 
+function CreateNewFilePopup()
+  vim.ui.input({ prompt = 'Name of new file: ' }, function(input)
+    if input and input ~= '' then
+      local current_dir = vim.fn.expand('%:p:h')
+      local full_path = current_dir .. '/' .. input
+      vim.cmd('edit ' .. full_path)
+	  harpoon:list():add() 
+    end
+  end)
+end
+
+vim.api.nvim_set_keymap('n', ',n', ':lua CreateNewFilePopup()<CR>', { noremap = true, silent = true })
 
 
 
