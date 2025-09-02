@@ -1,13 +1,28 @@
   -- Set up nvim-cmp.
   local cmp = require'cmp'
-
+local compare = cmp.config.compare
   cmp.setup({
-    snippet = {
-      -- REQUIRED - you must specify a snippet engine
-      expand = function(args)
-    	vim.fn["UltiSnips#Anon"](args.body) -- For `ultisnips` users.
-      end,
+	 sources = {
+    { name = "jupynium", priority = 1000 },  -- consider higher priority than LSP
+    { name = "nvim_lsp", priority = 100 },
+    -- ...
+  },
+  sorting = {
+    priority_weight = 1.0,
+    comparators = {
+      compare.score,            -- Jupyter kernel completion shows prior to LSP
+      compare.recently_used,
+      compare.locality,
+      -- ...
     },
+  },
+
+		snippet = {
+		  -- REQUIRED - you must specify a snippet engine
+		  expand = function(args)
+			vim.fn["UltiSnips#Anon"](args.body) -- For `ultisnips` users.
+		  end,
+		},
     window = {
       completion = cmp.config.window.bordered(),
       documentation = cmp.config.window.bordered(),
