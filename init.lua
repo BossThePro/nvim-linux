@@ -1,11 +1,17 @@
-require("settings.options")
-require("settings.lazy")
-require("settings.lspconfig")
-require("settings.harpoon")
-require("settings.treesitter")
-require("settings.highlighting")
-require("settings.jupynium")
-require("settings.cmp")
-require("custom.manim")
-vim.cmd("colorscheme kanagawa")
-vim.keymap.set('n', ',f', "<cmd>Telescope find_files<CR>", { noremap = true, silent = true })
+vim.g.mapleader = ","
+vim.g.maplocalleader = ","
+
+require("config.settings")
+require("config.lazy")
+require("config.treesitter")
+require("config.cmp")
+require("config.colorscheme")
+require("config.telescope")
+require("config.harpoon")
+require("config.keybinds")
+-- vim.api.nvim_create_autocmd("FileType", {
+--   pattern = "python",
+--   callback = function()
+--     vim.treesitter.start()
+--   end,
+-- })

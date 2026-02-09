@@ -1,0 +1,11 @@
+vim.opt.clipboard = "unnamedplus"
+vim.opt.cursorline = true
+vim.opt.ignorecase = true
+vim.opt.linebreak = true
+vim.opt.relativenumber = true
+vim.opt.smartcase = true
+vim.opt.shiftwidth = 4
+vim.opt.smarttab = true
+vim.opt.smartcase = true
+vim.opt.wrap = true
+vim.opt.wrapmargin = 15
